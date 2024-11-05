@@ -200,17 +200,23 @@ ORDER BY
    
 SELECT 
     DISTINCT Product
+    
 FROM 
     dbo.SalesData$
+    
 WHERE 
     Product NOT IN (
+    
       SELECT 
          Product
+         
       FROM 
            dbo.SalesData$
+           
         WHERE 
             OrderDate >= DATEADD(q, DATEDIFF(q, 0, GETDATE()), 0)
     )
+    
 ORDER BY 
     Product;
   	
