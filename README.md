@@ -2,14 +2,17 @@
 
 
 ## PROJECT OVERVIEW:
+---
 This report presents an analysis of total sales/revenue across various products, summarizing the performance and identifying the highest-earning product.
 
 ### Top Selling Products
+---
 Regional Performances
 Monthly Sales Trend
 PowerBI for visualization and storytelling
 
 ### DATA DESCRIPTION:
+---
 This dataset includes the following Columns:
 
 Order Number
@@ -27,6 +30,7 @@ Quantity
 Unit Price
 
 ### DASHBOARD REVIEW:
+---
 Customer Id
 products: Items sold in the store
 region: The other regional branches of the store ( North, South, East West)
@@ -41,6 +45,7 @@ Total Sales:  2,101,090.00
  Total Region: 4
 
 ### METHODOLOGY:
+---
 Data Collection
 The dataset for this analysis was provided by LITA_ The Incubator Hub for leaening and training purposes. The data was provided in Excel sheet [download Here] (https://canvas.instructure.com/files/273182802/download?download_frd=1) 
 
@@ -49,13 +54,14 @@ The excel sheet was for easy importing of files into: SQL to write various queri
 Power BI to create dashboards using various charts (Donut Chart, piechart and clustered Column Chart)
 
 ### DATA ANALYSIS:
+---
 Calculation in Excel
 Generating Total Sales =SUM(H2:H50259) Capture total sales as revenue
 
 calculating average total sales  =AVERAGE(H2:H9922) Capture sales data average by product
 
 
-Excel Chart
+- Excel Chart
 
 ![image](https://github.com/user-attachments/assets/9ae688f3-a7f9-403d-9ceb-05f19e70623e)
 
@@ -64,10 +70,9 @@ Excel Chart
 
 
 
+- Pivot Table
 
-my project capstone chart2
-
-Pivot Table
+![image](https://github.com/user-attachments/assets/030e318c-a6e3-4595-a2bf-74cfb1476428)
 
 
 Queries in SQL
@@ -75,25 +80,37 @@ SQL
 PROJECT 1
 
 1.	Retrieve the total sales for each product category.
+   
 SELECT product, SUM(Quantity * UnitPrice) AS total_sales
+
 FROM [dbo].[SalesData$]
+
 GROUP BY product;
 
-2.	Find the number of sales transactions in each region.
+3.	Find the number of sales transactions in each region.
+   
 SELECT region, COUNT(Quantity) AS total_transactions
+
 FROM [dbo].[SalesData$]
+
 GROUP BY region;
 
-3.	Find the highest-selling product by total sales value.
+5.	Find the highest-selling product by total sales value.
+   
 SELECT TOP 1 product, SUM(Quantity * UnitPrice) AS total_sales
+
 FROM [dbo].[SalesData$]
+
 GROUP BY product
+
 ORDER BY total_sales DESC
 
-4.	calculate total revenue per product.
+7.	calculate total revenue per product.
 
 SELECT product, SUM(Quantity * UnitPrice) AS total_revenue
+
 FROM [dbo].[SalesData$]
+
 GROUP BY product;
 
 5.	calculate monthly sales totals for the current year.
@@ -134,15 +151,20 @@ Total_Purchase_Amount DESC;
 8.	calculate the percentage of total sales contributed by each region.
    
 SELECT 
+
 Region,
   SUM(Quantity * UnitPrice) AS Regional_Sales,
   (SUM(Quantity * UnitPrice) / 
+  
     (SELECT SUM(Quantity * UnitPrice) FROM dbo.SalesData$)) * 100 
     AS Percentage_of_Total_Sales
+    
 FROM 
     [dbo].[SalesData$]
+    
 GROUP BY 
     Region
+    
 ORDER BY 
     Regional_Sales DESC;
 
@@ -187,9 +209,8 @@ ORDER BY
 
 
 
-
-
 ### Data Summary: 
+---
 The data provided outlines the sales/revenue figures for six products. Here’s a detailed breakdown:
 
 Gloves: NGN 296,900.00
@@ -234,4 +255,5 @@ Diversification: Explore opportunities to diversify the product line based on cu
 Seasonal Promotions: Utilize seasonal trends to boost sales. For example, promote Jackets and Gloves more aggressively during colder months.
 
 ### Conclusion: 
+---
 The analysis reveals that Shoes are the highest-earning product, accounting for the largest portion of revenue. Meanwhile, the Socks category shows room for improvement in sales strategies. The overall revenue distribution indicates a healthy mix of high-performing products, which can provide valuable insights for future product development and marketing initiatives.
