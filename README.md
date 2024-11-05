@@ -2,44 +2,58 @@
 
 
 ## PROJECT OVERVIEW:
-Making reference to the data and capstone project document shared earlier, by analyzing the sales performance of a retail store and carrying out the following exploratory process of the sales data to uncover key insights such as
+In this project is carried out to analyzing the sales performance of a retail store by exploring sales data to uncover key insights such as top-selling products, regional
+performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings.
 
 ### Top Selling Products
 Regional Performances
-Monthly Sales Trend and By telling a compelling story and building an interactive dashboard Power Bi report: To gather insight, Highlight findings And making business decisions.
+Monthly Sales Trend
+PowerBI for visualization and storytelling
 
 ### DATA DESCRIPTION:
 This dataset includes the following Columns:
 
 Order Number
+
 Customer Id
+
 products
+
 region
+
 Order Date
+
 Quantity
+
 Unit Price
-DASH BOARD REVIEW:
+
+### DASHBOARD REVIEW:
 Customer Id
 products: Items sold in the store
 region: The other regional branches of the store ( North, South, East West)
 Order Date: Date order was palced
 Quantity: The number of units of the product ordered in each transaction
 Unit Price: The aquisition cost per unit of the product
+
 STATISTICS ABOUT THE DATASET:
-Number of Unique Customers: 50,000 Number of Products: 6 Total Sales: 10587500 image Total Region: 4
+Number of Unique Customers: 9921
+Number of Products: 6 
+Total Sales:  2,101,090.00 
+ Total Region: 4
 
 ### METHODOLOGY:
 Data Collection
-The dataset for this analysis was provided by LITA_ The Incubator Hub for leaening and training purposes. The data was provided in Excel sheet [download Here] (https://canvas.instructure.com/files/273182802/download?download_frd=1) or https://eu.docworkspace.com/d/sILre1-uDAsKJzrgG?sa=wa&ps=1&fn=LITA%20Capstone%20Dataset%20(1).xlsx The excel sheet making it accessible to
+The dataset for this analysis was provided by LITA_ The Incubator Hub for leaening and training purposes. The data was provided in Excel sheet [download Here] (https://canvas.instructure.com/files/273182802/download?download_frd=1) 
 
-analyse the excel sheet The excel sheet was further converted to CSV format for easy importing of files into:
-SQL to write various queries
-Power BI to create dashboards using various charts (pieChart and clustered Column Chart)
-DATA ANALYSIS:
+The excel sheet was used for calculation and creating pivot tables to summarize the total sales by product, region, and month
+The excel sheet was for easy importing of files into: SQL to write various queries
+Power BI to create dashboards using various charts (Donut Chart, piechart and clustered Column Chart)
+
+### DATA ANALYSIS:
 Calculation in Excel
-Generating Total Sales (=F2* G2) Capture total sales as revenue
+Generating Total Sales =SUM(H2:H50259) Capture total sales as revenue
 
-calculating average sales by product  =AVERAGEIF($C1:$C50001,$C2,$H1:$H50001) Capture sales data average by product
+calculating average total sales  =AVERAGE(H2:H9922) Capture sales data average by product
 
 *calculating total revenue by region  ==SUMIF($D1:$D50001,$D12630,$H1:$H50001) Capture total revenue by region sales data
 
