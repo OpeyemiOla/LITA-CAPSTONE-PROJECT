@@ -131,7 +131,10 @@ WHERE
     )
 ORDER BY 
     Product;
-  	
+
+   -SQL VISUALS
+   ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
+
 
 
 DASH BOARD OVERVIEW WITH POWER BI:
