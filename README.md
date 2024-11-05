@@ -142,7 +142,8 @@ ORDER BY
 
 
 DASH BOARD OVERVIEW WITH POWER BI:
-image
+![image](https://github.com/user-attachments/assets/6b80bb57-2b7f-4288-869e-381ff7ae490e)
+
 
 INSIGHTS GENERATION:
 
