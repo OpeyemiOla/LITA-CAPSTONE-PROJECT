@@ -1,5 +1,27 @@
 # LITA-CAPSTONE-PROJECT
 
+[PROJECT OVERVIEW](PROJECT-OVERVIEW)
+
+[Top Selling Products](Top-Selling-Products)
+
+[DATA DESCRIPTION](DATA-DESCRIPTION)
+
+[DASHBOARD REVIEW](DASHBOARD-REVIEW)
+
+[METHODOLOGY](METHODOLOGY)
+
+[DATA ANALYSIS](DATA-ANALYSIS)
+
+[Data Summary](Data-Summary)
+
+[Key Insights](Key-Insights)
+
+[Recommendations](Recommendations)
+
+[Conclusions](Conclusions)
+
+
+
 
 ## PROJECT OVERVIEW:
 ---
@@ -11,7 +33,7 @@ Regional Performances
 Monthly Sales Trend
 PowerBI for visualization and storytelling
 
-### DATA DESCRIPTION:
+### DATA DESCRIPTION
 ---
 This dataset includes the following Columns:
 
@@ -29,7 +51,7 @@ Quantity
 
 Unit Price
 
-### DASHBOARD REVIEW:
+### DASHBOARD REVIEW
 ---
 Customer Id
 products: Items sold in the store
@@ -44,7 +66,7 @@ Number of Products: 6
 Total Sales:  2,101,090.00 
  Total Region: 4
 
-### METHODOLOGY:
+### METHODOLOGY
 ---
 Data Collection
 The dataset for this analysis was provided by LITA_ The Incubator Hub for leaening and training purposes. The data was provided in Excel sheet [download Here] (https://canvas.instructure.com/files/273182802/download?download_frd=1) 
@@ -53,7 +75,7 @@ The excel sheet was used for calculation and creating pivot tables to summarize 
 The excel sheet was for easy importing of files into: SQL to write various queries
 Power BI to create dashboards using various charts (Donut Chart, piechart and clustered Column Chart)
 
-### DATA ANALYSIS:
+### DATA ANALYSIS
 ---
 Calculation in Excel
 Generating Total Sales =SUM(H2:H50259) Capture total sales as revenue
@@ -139,12 +161,18 @@ ORDER BY
 8.	Find the top 5 customers by total purchase amount.
    
 SELECT TOP 5 
+
     [Customer Id], 
+    
     SUM(Quantity * UnitPrice) AS Total_Purchase_Amount
+    
 FROM 
+
     [dbo].[SalesData$]
+    
 GROUP BY 
    [Customer Id]
+   
 ORDER BY 
 Total_Purchase_Amount DESC;
 
