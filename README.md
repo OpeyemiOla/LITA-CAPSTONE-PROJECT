@@ -54,7 +54,6 @@ Generating Total Sales =SUM(H2:H50259) Capture total sales as revenue
 
 calculating average total sales  =AVERAGE(H2:H9922) Capture sales data average by product
 
-*calculating total revenue by region  ==SUMIF($D1:$D50001,$D12630,$H1:$H50001) Capture total revenue by region sales data
 
 Excel Chart
 my project capstone chart1
@@ -62,7 +61,7 @@ my project capstone chart1
 my project capstone chart2
 
 Pivot Table
-Capturesales new pivot table
+
 
 Queries in SQL
 SQL
