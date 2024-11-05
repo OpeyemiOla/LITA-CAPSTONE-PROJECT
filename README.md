@@ -56,7 +56,9 @@ calculating average total sales  =AVERAGE(H2:H9922) Capture sales data average b
 
 
 Excel Chart
-my project capstone chart1
+
+![image](https://github.com/user-attachments/assets/9ae688f3-a7f9-403d-9ceb-05f19e70623e)
+
 
 my project capstone chart2
 
