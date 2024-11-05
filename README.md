@@ -135,6 +135,9 @@ ORDER BY
    -SQL VISUALS
    ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
 
+   ![image](https://github.com/user-attachments/assets/bd0b9116-eb78-43f2-991a-0a72a6981e79)
+
+
 
 
 DASH BOARD OVERVIEW WITH POWER BI:
