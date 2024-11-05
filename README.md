@@ -133,11 +133,6 @@ ORDER BY
     Product;
   	
 
-Capturesales data sql1
-
-Capturesales data sql2
-
-Capturesales data sql3
 
 DASH BOARD OVERVIEW WITH POWER BI:
 image
