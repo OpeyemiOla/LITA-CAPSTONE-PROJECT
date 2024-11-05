@@ -91,19 +91,30 @@ FROM [dbo].[SalesData$]
 GROUP BY product;
 
 5.	calculate monthly sales totals for the current year.
+6.	
 SELECT 
     MONTH(OrderDate) AS month,
+  	
     SUM(UnitPrice) AS total_monthly_sales
+  	
 FROM 
+
     [dbo].[SalesData$]
+    
 WHERE 
+
    YEAR(OrderDate) = 2024
+   
 GROUP BY 
+
     MONTH(OrderDate)
+    
 ORDER BY 
+
     month;
 
-6.	Find the top 5 customers by total purchase amount.
+8.	Find the top 5 customers by total purchase amount.
+   
 SELECT TOP 5 
     [Customer Id], 
     SUM(Quantity * UnitPrice) AS Total_Purchase_Amount
@@ -114,7 +125,8 @@ GROUP BY
 ORDER BY 
 Total_Purchase_Amount DESC;
 
-7.	calculate the percentage of total sales contributed by each region.
+8.	calculate the percentage of total sales contributed by each region.
+   
 SELECT 
 Region,
   SUM(Quantity * UnitPrice) AS Regional_Sales,
@@ -128,7 +140,8 @@ GROUP BY
 ORDER BY 
     Regional_Sales DESC;
 
-8.	identify products with no sales in the last quarter.
+9.	identify products with no sales in the last quarter.
+   
 SELECT 
     DISTINCT Product
 FROM 
@@ -144,6 +157,7 @@ WHERE
     )
 ORDER BY 
     Product;
+  	
 
    -SQL VISUALS
    ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
@@ -160,6 +174,10 @@ ORDER BY
 ![image](https://github.com/user-attachments/assets/dc3aacdc-6526-4267-92fe-202a5906540d)
 
 ![image](https://github.com/user-attachments/assets/9e24a93d-a48d-412f-89c2-e5b7ae1369dc)
+
+
+![image](https://github.com/user-attachments/assets/86613035-439f-4369-afc3-34adc3f48a90)
+
 
 
 
