@@ -154,8 +154,11 @@ ORDER BY
 
 
 
-DASH BOARD OVERVIEW WITH POWER BI:
-![image](https://github.com/user-attachments/assets/6b80bb57-2b7f-4288-869e-381ff7ae490e)
+
+- DASH BOARD OVERVIEW WITH POWER BI:
+
+![image](https://github.com/user-attachments/assets/dc3aacdc-6526-4267-92fe-202a5906540d)
+
 
 
 
