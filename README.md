@@ -223,8 +223,7 @@ SELECT
     )
     ORDER BY 
     Product;
-  	```
-
+  	
 
 
 
