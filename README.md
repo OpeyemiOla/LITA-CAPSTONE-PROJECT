@@ -199,10 +199,14 @@ SELECT
     Product;
   	```
 
+
+
    -SQL VISUALS
    ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
 
+
    ![image](https://github.com/user-attachments/assets/bd0b9116-eb78-43f2-991a-0a72a6981e79)
+
 
    ![image](https://github.com/user-attachments/assets/6ca6bf66-10cd-42f7-8a9e-b8e5ca5ea516)
 
