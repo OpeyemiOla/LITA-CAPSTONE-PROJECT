@@ -227,7 +227,6 @@ SELECT
 
 
 
-
 ### Data Summary: 
 ---
 The data provided outlines the sales/revenue figures for six products. Here’s a detailed breakdown:
