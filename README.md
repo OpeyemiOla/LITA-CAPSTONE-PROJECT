@@ -211,7 +211,8 @@ SELECT
 
 - DASH BOARD OVERVIEW WITH POWER BI:
 
-![image](https://github.com/user-attachments/assets/dc3aacdc-6526-4267-92fe-202a5906540d)
+![image](https://github.com/user-attachments/assets/a31fe3d7-2f0a-4bec-bfbd-243382428d35)
+
 
 ![image](https://github.com/user-attachments/assets/9e24a93d-a48d-412f-89c2-e5b7ae1369dc)
 
