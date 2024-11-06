@@ -97,6 +97,32 @@ calculating average total sales  =AVERAGE(H2:H9922) Capture sales data average b
 ![image](https://github.com/user-attachments/assets/030e318c-a6e3-4595-a2bf-74cfb1476428)
 
 
+
+-SQL VISUALS
+   ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
+
+
+   ![image](https://github.com/user-attachments/assets/bd0b9116-eb78-43f2-991a-0a72a6981e79)
+
+
+   ![image](https://github.com/user-attachments/assets/6ca6bf66-10cd-42f7-8a9e-b8e5ca5ea516)
+
+
+
+
+- DASH BOARD OVERVIEW WITH POWER BI:
+
+![image](https://github.com/user-attachments/assets/a31fe3d7-2f0a-4bec-bfbd-243382428d35)
+
+
+
+![image](https://github.com/user-attachments/assets/f9d79395-2f97-4772-8f00-a720ab17d6da)
+
+
+
+![image](https://github.com/user-attachments/assets/bd98e09a-ca33-4271-ac99-48d535c28f63)
+
+
 Queries in SQL
 SQL
 PROJECT 1
@@ -198,32 +224,6 @@ SELECT
     ORDER BY 
     Product;
   	```
-
-
-
-   -SQL VISUALS
-   ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
-
-
-   ![image](https://github.com/user-attachments/assets/bd0b9116-eb78-43f2-991a-0a72a6981e79)
-
-
-   ![image](https://github.com/user-attachments/assets/6ca6bf66-10cd-42f7-8a9e-b8e5ca5ea516)
-
-
-
-
-- DASH BOARD OVERVIEW WITH POWER BI:
-
-![image](https://github.com/user-attachments/assets/a31fe3d7-2f0a-4bec-bfbd-243382428d35)
-
-
-
-![image](https://github.com/user-attachments/assets/f9d79395-2f97-4772-8f00-a720ab17d6da)
-
-
-
-![image](https://github.com/user-attachments/assets/bd98e09a-ca33-4271-ac99-48d535c28f63)
 
 
 
