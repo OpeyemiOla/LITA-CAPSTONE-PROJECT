@@ -103,12 +103,11 @@ PROJECT 1
 
 1.	Retrieve the total sales for each product category.
    
+```
 SELECT product, SUM(Quantity * UnitPrice) AS total_sales
-
 FROM [dbo].[SalesData$]
-
 GROUP BY product;
-
+```
 3.	Find the number of sales transactions in each region.
    
 SELECT region, COUNT(Quantity) AS total_transactions
