@@ -108,117 +108,96 @@ SELECT product, SUM(Quantity * UnitPrice) AS total_sales
 FROM [dbo].[SalesData$]
 GROUP BY product;
 ```
-3.	Find the number of sales transactions in each region.
+2.	Find the number of sales transactions in each region.
    
+```
 SELECT region, COUNT(Quantity) AS total_transactions
-
 FROM [dbo].[SalesData$]
-
 GROUP BY region;
+```
 
-5.	Find the highest-selling product by total sales value.
+3.	Find the highest-selling product by total sales value.
    
+```
 SELECT TOP 1 product, SUM(Quantity * UnitPrice) AS total_sales
-
 FROM [dbo].[SalesData$]
-
 GROUP BY product
-
 ORDER BY total_sales DESC
+```
+4.	calculate total revenue per product.
 
-7.	calculate total revenue per product.
-
+```
 SELECT product, SUM(Quantity * UnitPrice) AS total_revenue
-
 FROM [dbo].[SalesData$]
-
 GROUP BY product;
+```
 
 5.	calculate monthly sales totals for the current year.
-6.	
+
+```
 SELECT 
     MONTH(OrderDate) AS month,
-  	
-    SUM(UnitPrice) AS total_monthly_sales
-  	
-FROM 
-
-    [dbo].[SalesData$]
-    
-WHERE 
-
-   YEAR(OrderDate) = 2024
-   
-GROUP BY 
-
-    MONTH(OrderDate)
-    
-ORDER BY 
-
-    month;
+  	SUM(UnitPrice) AS total_monthly_sales
+  	FROM
+[dbo].[SalesData$]
+    WHERE
+YEAR(OrderDate) = 2024
+   GROUP BY 
+MONTH(OrderDate)
+    ORDER BY
+month;
+```
 
 8.	Find the top 5 customers by total purchase amount.
-   
+
+ ```  
 SELECT TOP 5 
-
-    [Customer Id], 
-    
+ [Customer Id], 
     SUM(Quantity * UnitPrice) AS Total_Purchase_Amount
-    
-FROM 
-
-    [dbo].[SalesData$]
-    
-GROUP BY 
+    FROM
+[dbo].[SalesData$]
+    GROUP BY 
    [Customer Id]
-   
-ORDER BY 
+   ORDER BY 
 Total_Purchase_Amount DESC;
+```
 
 8.	calculate the percentage of total sales contributed by each region.
    
+```
 SELECT 
-
 Region,
   SUM(Quantity * UnitPrice) AS Regional_Sales,
   (SUM(Quantity * UnitPrice) / 
-  
     (SELECT SUM(Quantity * UnitPrice) FROM dbo.SalesData$)) * 100 
     AS Percentage_of_Total_Sales
-    
-FROM 
+    FROM 
     [dbo].[SalesData$]
-    
-GROUP BY 
+    GROUP BY 
     Region
-    
-ORDER BY 
+    ORDER BY 
     Regional_Sales DESC;
+```
 
 9.	identify products with no sales in the last quarter.
-   
+
+```   
 SELECT 
     DISTINCT Product
-    
-FROM 
+    FROM 
     dbo.SalesData$
-    
-WHERE 
+    WHERE 
     Product NOT IN (
-    
-      SELECT 
+    SELECT 
          Product
-         
-      FROM 
+         FROM 
            dbo.SalesData$
-           
-        WHERE 
+           WHERE 
             OrderDate >= DATEADD(q, DATEDIFF(q, 0, GETDATE()), 0)
     )
-    
-ORDER BY 
+    ORDER BY 
     Product;
-  	
+  	```
 
    -SQL VISUALS
    ![image](https://github.com/user-attachments/assets/e8f9b19e-602a-40e5-bfa3-891261f14f32)
