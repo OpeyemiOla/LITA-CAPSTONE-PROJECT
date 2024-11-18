@@ -123,6 +123,57 @@ calculating average total sales  =AVERAGE(H2:H9922) Capture sales data average b
 ![image](https://github.com/user-attachments/assets/bd98e09a-ca33-4271-ac99-48d535c28f63)
 
 
+
+### Data Summary: 
+---
+The data provided outlines the sales/revenue figures for six products. Here’s a detailed breakdown:
+
+Gloves: NGN 296,900.00
+
+Hat: NGN 316,195.00
+
+Jacket: NGN 208,230.00
+
+Shirt: NGN 485,600.00
+
+Shoes: NGN 613,380.00
+
+Socks: NGN 180,785.00
+
+Grand Total Sales/Revenue: NGN 2,101,090.00
+
+### Key Insights:
+---
+
+Top Performing Product: Shoes lead the revenue figures with a total of NGN 613,380.00, representing the highest share of the total revenue (approximately 29.2%).
+
+Second Top Product: Shirts follow with a total revenue of NGN 485,600.00 (approximately 23.1%).
+
+Lowest Performing Product: Socks have the lowest total revenue, coming in at NGN 180,785.00 (approximately 8.6%).
+
+- Regional Insights:
+
+Top Performing Region: The South region leads with a total revenue of NGN 927,820.00, accounting for approximately 44.2% of the total revenue.
+
+Second Top Region: The East region follows with a total revenue of NGN 485,925.00 (approximately 23.1%).
+
+Lowest Performing Region: The West region has the lowest total revenue, coming in at NGN 300,345.00 (approximately 14.3%).
+
+### Recommendations:
+---
+Focus on Top Products: Enhance marketing and sales efforts for Shoes and Shirts, as they contribute significantly to the revenue. Consider promoting these products through special offers, discounts, and targeted advertising campaigns.
+
+Improve Low Performing Products: Investigate the reasons for low sales of Socks and Jackets. This could involve conducting market research to understand customer preferences and adjusting the product features or pricing accordingly.
+
+Diversification: Explore opportunities to diversify the product line based on customer feedback and market trends. Introducing new products or variations of existing products could attract a broader customer base.
+
+Seasonal Promotions: Utilize seasonal trends to boost sales. For example, promote Jackets and Gloves more aggressively during colder months.
+
+### Conclusion: 
+---
+The analysis reveals that Shoes are the highest-earning product, accounting for the largest portion of revenue. Meanwhile, the Socks category shows room for improvement in sales strategies. The overall revenue distribution indicates a healthy mix of high-performing products, which can provide valuable insights for future product development and marketing initiatives.
+
+
 Queries in SQL
 SQL
 PROJECT 1
@@ -224,54 +275,3 @@ SELECT
     ORDER BY 
     Product;
   	
-
-
-
-### Data Summary: 
----
-The data provided outlines the sales/revenue figures for six products. Here’s a detailed breakdown:
-
-Gloves: NGN 296,900.00
-
-Hat: NGN 316,195.00
-
-Jacket: NGN 208,230.00
-
-Shirt: NGN 485,600.00
-
-Shoes: NGN 613,380.00
-
-Socks: NGN 180,785.00
-
-Grand Total Sales/Revenue: NGN 2,101,090.00
-
-### Key Insights:
----
-
-Top Performing Product: Shoes lead the revenue figures with a total of NGN 613,380.00, representing the highest share of the total revenue (approximately 29.2%).
-
-Second Top Product: Shirts follow with a total revenue of NGN 485,600.00 (approximately 23.1%).
-
-Lowest Performing Product: Socks have the lowest total revenue, coming in at NGN 180,785.00 (approximately 8.6%).
-
-- Regional Insights:
-
-Top Performing Region: The South region leads with a total revenue of NGN 927,820.00, accounting for approximately 44.2% of the total revenue.
-
-Second Top Region: The East region follows with a total revenue of NGN 485,925.00 (approximately 23.1%).
-
-Lowest Performing Region: The West region has the lowest total revenue, coming in at NGN 300,345.00 (approximately 14.3%).
-
-### Recommendations:
----
-Focus on Top Products: Enhance marketing and sales efforts for Shoes and Shirts, as they contribute significantly to the revenue. Consider promoting these products through special offers, discounts, and targeted advertising campaigns.
-
-Improve Low Performing Products: Investigate the reasons for low sales of Socks and Jackets. This could involve conducting market research to understand customer preferences and adjusting the product features or pricing accordingly.
-
-Diversification: Explore opportunities to diversify the product line based on customer feedback and market trends. Introducing new products or variations of existing products could attract a broader customer base.
-
-Seasonal Promotions: Utilize seasonal trends to boost sales. For example, promote Jackets and Gloves more aggressively during colder months.
-
-### Conclusion: 
----
-The analysis reveals that Shoes are the highest-earning product, accounting for the largest portion of revenue. Meanwhile, the Socks category shows room for improvement in sales strategies. The overall revenue distribution indicates a healthy mix of high-performing products, which can provide valuable insights for future product development and marketing initiatives.
